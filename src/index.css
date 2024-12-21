@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-explore {
+    background-color: #512da8;
+    color: white;
+}
+
+.btn-search {
+    background-color: #757de8;
+    color: white;
+}

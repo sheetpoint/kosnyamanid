@@ -1,0 +1,54 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+.active-link {
+    font-weight: bold;
+    color: #512da8;
+    border-bottom: 2px solid #512da8;
+  }
+  
+
+.logo-img {
+    width: 163px; /* Sesuaikan ukuran logo */
+    height: auto;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.header .icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-icon,
+.user-icon {
+  font-size: 24px;
+  color: #512da8;
+  cursor: pointer;
+}
+
+.search-icon:hover,
+.user-icon:hover {
+  color: #3b1980;
+}
+
+.language button {
+    border: none;
+    background: none;
+    font-size: 14px;
+    cursor: pointer;
+}
