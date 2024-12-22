@@ -1,0 +1,17 @@
+.carousel {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .carousel-item img {
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
+  }
+  

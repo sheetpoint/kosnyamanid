@@ -1,0 +1,16 @@
+.home-container {
+    padding: 20px;
+  }
+  
+  .content-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column;
+    }
+  }
+  
