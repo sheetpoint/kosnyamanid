@@ -1,0 +1,40 @@
+.filter-bar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+  }
+  
+  .filter-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+  }
+  
+  .filter-item label {
+    font-size: 14px;
+    color: #8c8c8c;
+  }
+  
+  .ant-btn-primary {
+    background-color: #512da8;
+    border: none;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .ant-btn-primary:hover {
+    background-color: #3e1c93;
+  }
+  
+  .ant-select,
+  .ant-picker {
+    height: 40px;
+    border-radius: 10px;
+  }
+  
