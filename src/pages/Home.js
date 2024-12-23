@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import Header from "../components/Header";
-import HeroSection from "../components/HeroSection";
-import Filter from "../components/Filter";
-import CardList from "../components/CardList";
-import Footer from "../components/Footer";
+import HeroSection from "../components/HeroSection"; // Komponen Hero
+import WilayahRW from "./WilayahRW"; // Komponen WilayahRW
+import Carousel from "../components/Carousel"; // Komponen Carousel
+import Filter from "../components/Filter"; // Komponen Filter
+import CardList from "../components/CardList"; // Daftar Kos
+import Footer from "../components/Footer"; // Footer
+import "./Home.css"; // Styling Home
 
 const Home = () => {
   const [filteredData, setFilteredData] = useState([]);
@@ -13,18 +15,30 @@ const Home = () => {
     { id: 2, name: "Kos Eksklusif RW 02", harga: 2000000, jumlahKamar: 2, fasilitas: ["AC", "Parkir"] },
   ];
 
-  const handleFilterChange = (filter) => {
-    // Logika filter
+  const handleFilterChange = (filters) => {
+    const filtered = allData.filter((item) => {
+      return (
+        (!filters.jumlahKamar || item.jumlahKamar === Number(filters.jumlahKamar))
+      );
+    });
+    setFilteredData(filtered);
   };
-
+  
   return (
-    <div>
-      <Header />
+    <div className="home-container">
+      {/* Hero Section */}
       <HeroSection />
-      <div className="container mx-auto my-8">
+
+      {/* Wilayah RW */}
+      <WilayahRW />
+
+      {/* Filter dan Card List */}
+      <div className="content-container">
         <Filter onFilterChange={handleFilterChange} />
         <CardList data={filteredData.length > 0 ? filteredData : allData} />
       </div>
+
+      {/* Footer */}
       <Footer />
     </div>
   );

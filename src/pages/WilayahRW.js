@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import "../components/WilayahRW.css";
-import rwImage1 from "../assets/images/image (2).png"; // Gambar RW 01
-import rwImage2 from "../assets/images/image (3).png"; // Gambar RW 02
-import rwImage3 from "../assets/images/image (3).png"; // Gambar RW 03
+import rwImage1 from "../assets/images/image (2).png";
+import rwImage2 from "../assets/images/image (2).png";
+import rwImage3 from "../assets/images/image (3).png";
 import rwImage4 from "../assets/images/image (2).png";
-import rwImage5 from "../assets/images/image (2).png";
-
+import rwImage5 from "../assets/images/image (3).png";
 
 const WilayahRW = () => {
     // State untuk mengatur indeks pertama dari card yang terlihat
@@ -56,7 +55,7 @@ const WilayahRW = () => {
     return (
         <div className="wilayah-rw">
             <h1>Cari Kos Mudah dan Cepat di Semua Wilayah</h1>
-            <p>Jelajahi daftar kos berdasarkan wilayah RW. Temukan informasi umum tentang kelurahan dan kecamatan di setiap RW.</p>
+            <p>Jelajahi daftar kos berdasarkan wilayah RW.</p>
             <div className="carousel">
                 <div className="rw-list">
                     {visibleData.map((rw, index) => (
