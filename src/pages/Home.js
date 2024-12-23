@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import HeroSection from "../components/HeroSection"; // Komponen Hero
+import WilayahRW from "./WilayahRW"; // Komponen WilayahRW
 import Carousel from "../components/Carousel"; // Komponen Carousel
 import Filter from "../components/Filter"; // Komponen Filter
 import CardList from "../components/CardList"; // Daftar Kos
@@ -46,13 +47,20 @@ const Home = () => {
 
   return (
     <div className="home-container">
+      {/* Hero Section */}
       <HeroSection />
-      <Carousel />
+
+      {/* Wilayah RW */}
+      <WilayahRW />
+
+      {/* Filter dan Card List */}
       <div className="content-container">
         <Filter onFilterChange={handleFilterChange} />
         <CardList data={filteredData.length > 0 ? filteredData : allData} />
       </div>
-     
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
